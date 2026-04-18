@@ -21,6 +21,8 @@ public class AlertTest {
 		
 		ChromeOptions opt = new ChromeOptions();
 		opt.addArguments("--headless=new");
+		opt.addArguments("--no-sandbox");
+		opt.addArguments("--disable-dev-shm-usage");
 		
 		driver = new ChromeDriver(opt);
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/#top");

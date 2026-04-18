@@ -27,3 +27,6 @@ jobs:
         with:
           name: test-results
           path: target/surefire-reports/
+		  
+	  - name: Run Tests
+		run: mvn test -Dorg.slf4j.simpleLogger.defaultLogLevel=debug

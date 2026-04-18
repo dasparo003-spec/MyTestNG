@@ -25,7 +25,7 @@ public class AlertTest {
 		driver = new ChromeDriver(opt);
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/#top");
 		driver.manage().window().maximize();
-		
+		System.out.println("Hi");
 	}
 	@Test(dataProvider = "getData1")
 	public void logIn(String value) throws InterruptedException{
